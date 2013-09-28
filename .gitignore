@@ -1,0 +1,5 @@
+/.bundle
+/.cache
+/users/*.yaml
+!/users/sample.yaml
+/vendor
