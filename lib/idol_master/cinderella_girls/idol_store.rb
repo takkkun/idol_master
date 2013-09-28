@@ -61,6 +61,7 @@ module IdolMaster
         end
 
         def save
+          @path.dirname.mkpath unless @path.dirname.exist?
           @path.open('w') { |file| YAML.dump(@cache, file) }
         end
 
