@@ -1,0 +1,17 @@
+status:
+  offence: 100
+  defence: 100
+
+idols:
+  - 231 # [R+] 如月千早+
+
+  -
+    id: 279 # [SR+] [孤高の歌姫]如月千早+
+    offence: 11986
+    defence: 9730
+
+  -
+    name: '[瑠璃の歌姫]如月千早+'
+    offence: 6646
+    defence: 9957
+    cost: 10
