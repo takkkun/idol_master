@@ -27,7 +27,7 @@ module IdolMaster
       def lookup(idol_id)
         raise ArgumentError, 'idol ID should be integer' unless idol_id.is_a?(Integer)
 
-        content       = Kernel.open("http://www5164u.sakura.ne.jp/idols/#{idol_id}").read
+        content       = URI.open("http://www5164u.sakura.ne.jp/idols/#{idol_id}").read
         document      = Nokogiri::HTML(content)
         profile       = document.xpath('//div[@id="show"]')
         status        = profile.xpath('.//div[@id="status-tab"]//table')
